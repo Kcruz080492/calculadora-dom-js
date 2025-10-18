@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora DOM</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Calculadora DOM</h1>
+
+    <div class="fila">
+      <label for="numero1">Número 1</label>
+      <input id="numero1" type="number" placeholder="Ej: 12" />
+    </div>
+
+    <div class="fila">
+      <label for="numero2">Número 2</label>
+      <input id="numero2" type="number" placeholder="Ej: 3" />
+    </div>
+
+    <div class="botones">
+      <button data-op="+">+</button>
+      <button data-op="-">−</button>
+      <button data-op="*">×</button>
+      <button data-op="/">÷</button>
+    </div>
+
+    <p id="resultado" class="resultado">Resultado: —</p>
+    <p id="mensaje" class="mensaje"></p>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
